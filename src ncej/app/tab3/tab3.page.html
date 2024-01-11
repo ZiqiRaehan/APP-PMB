@@ -1,0 +1,145 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tambahkan mahasiswa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-header>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login by Matt05 | Codepen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="">
+  </ion-header>
+<ion-content [fullscreen]="true">
+<body style="background: #214a80;">  
+  
+  <div class="login-dark"  style="height: 695px;">
+    
+    <form >
+      <div class="text-center mt-4 name">
+        Input Pendaftaran Mahasiswa Baru
+      </div>
+        <div class="login-dark">
+            <span class="far fa-user">Nama Lengkap</span>
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder="Nama Lengkap..." [(ngModel)]="nama" name="nama">
+          </div>
+        </div>
+
+        
+          
+           <ion-item class="form-group">
+            <ion-label position="stacked">Jenis Kelamin</ion-label>
+            <ion-select placeholder="Pilih Jenis Kelamin" [(ngModel)]="jenis_kelamin" name="jenis_kelamin">
+              <ion-select-option  value="L">Laki-Laki</ion-select-option>
+              <ion-select-option value="P">Perempuan</ion-select-option>
+            </ion-select>
+          </ion-item>
+        
+
+      
+          <span class="fas fa-key">No.Handphone</span>
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="No.Handphone" [(ngModel)]="no_handphone" name="no_handphone">
+          </div>
+       
+
+     
+          <span class="far fa-user">Email</span>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="contoh@gmail.com" [(ngModel)]="email" name="email">
+          </div>
+
+
+        
+          <span class="far fa-user">Asal Sekolah</span>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Asal Sekolah..." [(ngModel)]="asal_sekolah" name="asal_sekolah">
+          </div>
+        
+
+          <!-- <span class="fas fa-key">Program Studi</span>
+          <div class="form-group">
+             <select [(ngModel)]="studi" name="studi">
+                <option value="SI">Sistem Informasi (S1)</option>
+                <option value="TI">Teknik Informatika (S1)</option>
+               <option value="TEKIN">Teknologi Informasi (S1)</option>
+             </select>
+            </div> -->
+
+            <ion-item class="form-group">
+              <ion-label position="stacked">Program Studi</ion-label>
+              <ion-select [(ngModel)]="studi" placeholder="Pilih Program Studi" name="studi">
+                <ion-select-option value="SI">Sistem Informasi </ion-select-option>
+                <ion-select-option value="TI">Teknik Informatika</ion-select-option>
+                <ion-select-option value="TEKIN">Teknologi Informasi</ion-select-option>
+              </ion-select>
+            </ion-item>
+       
+    
+        <!-- <span class="fas fa-key">Jenjang</span>
+          <div class="form-group">
+           <select [(ngModel)]="jenjang" name="jenjang">
+              <option value="S1">Sarjana (S1)</option>
+              <option value="D3">Diploma (D3)</option>
+           </select>
+          </div> -->
+
+          <ion-item class="form-group">
+            <ion-label position="stacked">Jenjang</ion-label>
+            <ion-select [(ngModel)]="jenjang" placeholder="Pilih Jenjang" name="jenjang">
+              <ion-select-option value="S1">Sarjana (S1)</ion-select-option>
+              <ion-select-option value="D3">Diploma (D3)</ion-select-option>
+            </ion-select>
+          </ion-item>
+   
+
+    
+      <!-- <span class="fas fa-key">Kelas</span>
+        <div class="form-group">
+            <select [(ngModel)]="kelas" name="kelas">
+              <option value="A">Kelas A</option>
+               <option value="B">Kelas B</option>
+               <option value="C">Kelas C</option>
+            </select>
+          </div> -->
+
+          <ion-item class="form-group">
+            <ion-label position="stacked">Kelas</ion-label>
+            <ion-select [(ngModel)]="kelas" placeholder="Pilih Kelas" name="kelas">
+              <ion-select-option value="A">Kelas A</ion-select-option>
+              <ion-select-option value="B">Kelas B</ion-select-option>
+              <ion-select-option value="C">Kelas C</ion-select-option>
+            </ion-select>
+          </ion-item>
+   
+
+  
+    <!-- <span class="fas fa-key">Info Kampus</span>
+        <div class="form-group">
+          <select [(ngModel)]="info" name="info">
+            <option value="MAHASISWA">Mahasiswa UNBIN</option>
+            <option value="WEBSITE">Website UNBIN</option>
+          </select>
+        </div> -->
+
+        <ion-item class="form-group">
+          <ion-label position="stacked">Info Kampus</ion-label>
+          <ion-select [(ngModel)]="info" placeholder="Pilih Info Kampus" name="info">
+            <ion-select-option value="MAHASISWA">Mahasiswa UNBIN</ion-select-option>
+            <ion-select-option value="WEBSITE">Website UNBIN</ion-select-option>
+          </ion-select>
+        </ion-item>
+ 
+
+        <button class="btn btn-primary btn-block" (click)="addData()" expand="full" color="primary">Daftar</button>
+    </form> 
+  </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</ion-content>
+

@@ -1,0 +1,29 @@
+body{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: #214a80;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #214a80;
+}
+tbody td {
+  font-weight: 500;
+  color:#999999;  
+}
+.ion-header {
+    --background-color: #214a80;
+}
+.ion-toolbar {
+    background-color: #214a80;
+}
+ion-content {
+    background-color: #214a80;
+}
+.jaki{
+  background-color: #214a80;
+}

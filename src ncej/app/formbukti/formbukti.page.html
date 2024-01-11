@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>formbukti</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-content [fullscreen]="true">
+ 
+
+  
+    <ion-label>Nama lengkap</ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="nama" name="nama"></ion-input>
+    </ion-item>
+  
+    <ion-label>asal sekolah</ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="asal_sekolah" name="asal_sekolah"></ion-input>
+    </ion-item>
+ 
+  
+    <ion-label>Foto Mahasiswa</ion-label>
+    <ion-item>
+      <input type="file" (change)="imageUpload($event)" />
+    </ion-item>
+  
+    <ion-button
+      expand="block"
+      (click)="addData()"
+      color="primary">
+      Simpan
+    </ion-button>
+  
+</ion-content>
+</ion-content>

@@ -1,0 +1,97 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<!-- <ion-content [fullscreen]="true" class="ion-padding" style="background: #214a80;"> -->
+ 
+  <!-- <body style="background: #214a80;">
+    <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-row *ngFor ="let fee of feeData">
+      <ion-item-sliding>
+        <ion-item>
+          <div>
+            <p>{{fee.nama}}  {{fee.status}} fee anda {{fee.jumlah_fee}}</p>
+          </div>
+        </ion-item>
+   
+      </ion-item-sliding>
+        </ion-row>
+        <div class="form-group">
+              
+          <button class="btn btn-primary btn-block" name="register" (click)="Getdota()">
+            back</button>
+          
+        </div>
+   </body> -->
+ 
+<!-- </ion-content> -->
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Data 
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <ion-header class="jaki">
+    <ion-toolbar>
+      <ion-title size="large" style="color: blue;">list cuan</ion-title>
+                
+        <button class="btn btn-primary btn-block" name="register" (click)="Getdota()">
+          back</button>
+     
+    </ion-toolbar>
+  </ion-header>
+
+  <body>
+    <section class="intro">
+      <div class="gradient-custom-1 h-100">
+        <div class="mask d-flex align-items-center h-100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="table-responsive bg-white">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">id</th>
+                        <th scope="col">password</th>
+                        <th scope="col">Nama</th>
+                       
+                     
+                        <th scope="col">Pembayaran</th>
+                        <th scope="col">fee</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor ="let tbl_fee_z of feeData">
+                        <th scope="row" style="color: #666666;">{{tbl_fee_z.no}}</th>
+                        <td>{{tbl_fee_z.id}}</td>
+                        <td>{{tbl_fee_z.password}}</td>
+                        <td>{{tbl_fee_z.nama}}</td>
+                   
+                        <td>{{tbl_fee_z.status}}</td>
+                        <td>{{tbl_fee_z.jumlah_fee}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+  
+  
+ 
+</ion-content>
